@@ -1,2 +1,2 @@
 # GridViewTutorials
-This rep is for learning purposes 
+This rep is for an Article 🖼 
