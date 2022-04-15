@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		CEB35924280901C800AD43B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB35923280901C800AD43B4 /* AppDelegate.swift */; };
 		CEB35926280901C800AD43B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB35925280901C800AD43B4 /* SceneDelegate.swift */; };
-		CEB35928280901C800AD43B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB35927280901C800AD43B4 /* ViewController.swift */; };
+		CEB35928280901C800AD43B4 /* AwsomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB35927280901C800AD43B4 /* AwsomeViewController.swift */; };
 		CEB3592B280901C800AD43B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB35929280901C800AD43B4 /* Main.storyboard */; };
 		CEB3592D280901CA00AD43B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB3592C280901CA00AD43B4 /* Assets.xcassets */; };
 		CEB35930280901CA00AD43B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3592E280901CA00AD43B4 /* LaunchScreen.storyboard */; };
+		CEB3593B280902B500AD43B4 /* GridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB35937280902B500AD43B4 /* GridViewCell.xib */; };
+		CEB3593C280902B500AD43B4 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB35938280902B500AD43B4 /* GridViewCell.swift */; };
+		CEB3593D280902B500AD43B4 /* GridViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB35939280902B500AD43B4 /* GridViewHeader.swift */; };
+		CEB3593E280902B500AD43B4 /* GridViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB3593A280902B500AD43B4 /* GridViewHeader.xib */; };
+		CEB35940280902CB00AD43B4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3593F280902CB00AD43B4 /* UIColor+Extension.swift */; };
 		F93922A823251D7021F554D1 /* Pods_GridViewTutorials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C135D04C29A29A547E179315 /* Pods_GridViewTutorials.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +27,16 @@
 		CEB35920280901C800AD43B4 /* GridViewTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridViewTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB35923280901C800AD43B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB35925280901C800AD43B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEB35927280901C800AD43B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEB35927280901C800AD43B4 /* AwsomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsomeViewController.swift; sourceTree = "<group>"; };
 		CEB3592A280901C800AD43B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB3592C280901CA00AD43B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB3592F280901CA00AD43B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB35931280901CA00AD43B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB35937280902B500AD43B4 /* GridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewCell.xib; sourceTree = "<group>"; };
+		CEB35938280902B500AD43B4 /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		CEB35939280902B500AD43B4 /* GridViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewHeader.swift; sourceTree = "<group>"; };
+		CEB3593A280902B500AD43B4 /* GridViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewHeader.xib; sourceTree = "<group>"; };
+		CEB3593F280902CB00AD43B4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D00054D6BE4050482B05BF61 /* Pods-GridViewTutorials.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridViewTutorials.release.xcconfig"; path = "Target Support Files/Pods-GridViewTutorials/Pods-GridViewTutorials.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,13 +75,26 @@
 			children = (
 				CEB35923280901C800AD43B4 /* AppDelegate.swift */,
 				CEB35925280901C800AD43B4 /* SceneDelegate.swift */,
-				CEB35927280901C800AD43B4 /* ViewController.swift */,
+				CEB359412809034700AD43B4 /* Awsome Example */,
 				CEB35929280901C800AD43B4 /* Main.storyboard */,
 				CEB3592C280901CA00AD43B4 /* Assets.xcassets */,
+				CEB3593F280902CB00AD43B4 /* UIColor+Extension.swift */,
 				CEB3592E280901CA00AD43B4 /* LaunchScreen.storyboard */,
 				CEB35931280901CA00AD43B4 /* Info.plist */,
 			);
 			path = GridViewTutorials;
+			sourceTree = "<group>";
+		};
+		CEB359412809034700AD43B4 /* Awsome Example */ = {
+			isa = PBXGroup;
+			children = (
+				CEB35927280901C800AD43B4 /* AwsomeViewController.swift */,
+				CEB35938280902B500AD43B4 /* GridViewCell.swift */,
+				CEB35937280902B500AD43B4 /* GridViewCell.xib */,
+				CEB35939280902B500AD43B4 /* GridViewHeader.swift */,
+				CEB3593A280902B500AD43B4 /* GridViewHeader.xib */,
+			);
+			path = "Awsome Example";
 			sourceTree = "<group>";
 		};
 		E2EA2CB61C03C372D9A9BC5D /* Pods */ = {
@@ -80,7 +103,6 @@
 				56AE24199A791AF0BB73BF0C /* Pods-GridViewTutorials.debug.xcconfig */,
 				D00054D6BE4050482B05BF61 /* Pods-GridViewTutorials.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,8 +174,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB3593E280902B500AD43B4 /* GridViewHeader.xib in Resources */,
 				CEB35930280901CA00AD43B4 /* LaunchScreen.storyboard in Resources */,
 				CEB3592D280901CA00AD43B4 /* Assets.xcassets in Resources */,
+				CEB3593B280902B500AD43B4 /* GridViewCell.xib in Resources */,
 				CEB3592B280901C800AD43B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,8 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB35928280901C800AD43B4 /* ViewController.swift in Sources */,
+				CEB3593D280902B500AD43B4 /* GridViewHeader.swift in Sources */,
+				CEB35928280901C800AD43B4 /* AwsomeViewController.swift in Sources */,
 				CEB35924280901C800AD43B4 /* AppDelegate.swift in Sources */,
+				CEB35940280902CB00AD43B4 /* UIColor+Extension.swift in Sources */,
+				CEB3593C280902B500AD43B4 /* GridViewCell.swift in Sources */,
 				CEB35926280901C800AD43B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
