@@ -1,0 +1,16 @@
+PODS:
+  - SwiftGridView (0.7.6)
+
+DEPENDENCIES:
+  - SwiftGridView (~> 0.7)
+
+SPEC REPOS:
+  trunk:
+    - SwiftGridView
+
+SPEC CHECKSUMS:
+  SwiftGridView: bf66a5a78b238f315538d4f0ba4b10bbc906b908
+
+PODFILE CHECKSUM: 5f0f4c3787cbb2cf3bbcaebe520dab0018084259
+
+COCOAPODS: 1.11.2

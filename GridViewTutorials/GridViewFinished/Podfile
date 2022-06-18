@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GridViewPart2Finished' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+pod 'SwiftGridView', '~> 0.7'
+
+  # Pods for GridViewPart2Finished
+
+end
